@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Quiz</title>
+    <link rel="stylesheet" href="POP QUIZES.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Earth&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="climate-bg"></div>
+    
+    <div class="quiz-container animate__animated animate__fadeIn">
+        <div class="quiz-header">
+            <div class="earth-icon animate__animated animate__rotateIn">
+                <i class="fas fa-globe-europe"></i>
+            </div>
+            <h1>Climate Change Quiz</h1>
+            <p class="subtitle">Test your knowledge about our planet</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+                <div class="progress-text" id="progress-text">1/10</div>
+            </div>
+            
+            <div class="score-container">
+                <i class="fas fa-leaf"></i>
+                <span id="score">0</span>
+            </div>
+        </div>
+        
+        <div class="quiz-body">
+            <div class="question-container animate__animated animate__fadeInUp" id="question-container">
+                <h2 id="question">Loading question...</h2>
+                <div class="options-container" id="options-container"></div>
+            </div>
+            
+            <div class="feedback-container animate__animated" id="feedback-container">
+                <div class="feedback-content" id="feedback-content"></div>
+                <button class="continue-btn" id="continue-btn">Continue</button>
+            </div>
+            
+            <div class="controls-container">
+                <button id="prev-btn" class="control-btn">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button id="next-btn" class="control-btn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="result-container animate__animated" id="result-container">
+            <div class="result-header">
+                <div class="result-icon" id="result-icon"></div>
+                <h2 id="result-title">Quiz Completed!</h2>
+            </div>
+            
+            <div class="result-content">
+                <p>Your final score is: <span id="final-score">0</span>/<span id="total-questions">0</span></p>
+                
+                <div class="result-visual">
+                    <div class="thermometer">
+                        <div class="mercury" id="mercury"></div>
+                    </div>
+                    <div class="planet" id="planet-result"></div>
+                </div>
+                
+                <div class="result-facts" id="result-facts"></div>
+                
+                <div class="action-buttons">
+                    <button id="restart-btn" class="action-btn green-btn">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                    <button id="share-btn" class="action-btn blue-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="POP QUIZES.js"></script>
+</body>
+</html>
